@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CFY-kr-7zU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yO3-9D-jJG">
+            <objects>
+                <navigationController id="CFY-kr-7zU" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Fd-AR-U8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LHd-fg-7Hg" kind="relationship" relationship="rootViewController" id="uzR-1A-L6x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBn-vh-Q6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-758" y="356"/>
+        </scene>
+        <!--Swift Demo-->
+        <scene sceneID="ES5-f9-QqG">
+            <objects>
+                <tableViewController id="LHd-fg-7Hg" customClass="ViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qqp-m3-mL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Điểm đi" id="GYk-yS-Miy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fKx-UR-r60">
+                                        <rect key="frame" x="0.0" y="114" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fKx-UR-r60" id="eQz-GK-bZb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-eE-pRT">
+                                                    <rect key="frame" x="8" y="7" width="398" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cqf-eE-pRT" firstAttribute="top" secondItem="eQz-GK-bZb" secondAttribute="topMargin" constant="-1" id="LRr-6P-jYc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cqf-eE-pRT" secondAttribute="trailing" id="TMb-xx-nyR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cqf-eE-pRT" secondAttribute="bottom" constant="-2" id="jaA-dB-Bw9"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="cqf-eE-pRT" secondAttribute="leading" id="y2n-BH-g7q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Điểm đến" id="QiV-yl-Qs2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Caj-fn-Wxp">
+                                        <rect key="frame" x="0.0" y="209" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Caj-fn-Wxp" id="U7w-5M-p2e">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eu6-Jk-Ikc">
+                                                    <rect key="frame" x="8" y="7" width="398" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="eu6-Jk-Ikc" secondAttribute="leading" id="8gr-gN-tsV"/>
+                                                <constraint firstItem="eu6-Jk-Ikc" firstAttribute="top" secondItem="U7w-5M-p2e" secondAttribute="topMargin" constant="-1" id="C0B-nE-e2y"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eu6-Jk-Ikc" secondAttribute="trailing" id="VmN-lo-4om"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eu6-Jk-Ikc" secondAttribute="bottom" constant="-2" id="fLx-Qs-R4t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="duA-t7-JoQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4b3-fh-tZQ">
+                                        <rect key="frame" x="0.0" y="289" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4b3-fh-tZQ" id="kYz-rt-VdQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qru-gX-q8m">
+                                                    <rect key="frame" x="135" y="7" width="145" height="30"/>
+                                                    <state key="normal" title="Tính cước"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="DOU-mM-g15">
+                                        <rect key="frame" x="0.0" y="333" width="414" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DOU-mM-g15" id="Qy8-vy-yZY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cước ước tính" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-fx-3oa">
+                                                    <rect key="frame" x="8" y="8" width="141" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50000 - 70000 VNĐ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytC-GS-3Oc">
+                                                    <rect key="frame" x="8" y="64" width="398" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wYh-Na-xCN">
+                                        <rect key="frame" x="0.0" y="482" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wYh-Na-xCN" id="rXn-UL-Goy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4B-DU-qwM">
+                                                    <rect key="frame" x="117" y="7" width="181" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <state key="normal" title="Xem bản đồ"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LHd-fg-7Hg" id="mPg-nC-AQJ"/>
+                            <outlet property="delegate" destination="LHd-fg-7Hg" id="Qpp-Ks-VrK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swift Demo" id="AAw-mo-wDz"/>
+                    <connections>
+                        <outlet property="btnCalPrice" destination="qru-gX-q8m" id="RWG-ZN-kuI"/>
+                        <outlet property="btnViewMap" destination="J4B-DU-qwM" id="Vy8-vu-B72"/>
+                        <outlet property="txtFrom" destination="cqf-eE-pRT" id="4QU-fv-DPp"/>
+                        <outlet property="txtPrice" destination="ytC-GS-3Oc" id="7GE-Oe-Md4"/>
+                        <outlet property="txtTo" destination="eu6-Jk-Ikc" id="7ui-TB-aAX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhe-6U-FF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="246"/>
+        </scene>
+    </scenes>
+</document>
